@@ -1,1 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2022-07-16T04:49:19.877Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" version="20.1.1" etag="DRoj1mk14dGfESjTTPSi" type="github"><diagram id="llxKzwVZ0cvhlQSzAo0G">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-16T04:51:25.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="sapRIo_4Ga_0lHzdS_5o" version="20.1.1" type="github">
+  <diagram id="llxKzwVZ0cvhlQSzAo0G" name="Page-1">
+    <mxGraphModel dx="1896" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SubmTX_4PnBW8hBFExT1-2" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-3" value="Data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="540" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-4" value="Json Data Object" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-5" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="530" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-6" value="DataTable" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-7" value="&lt;div style=&quot;&quot;&gt;&lt;span data-darkreader-inline-color=&quot;&quot; data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: initial; color: rgb(240, 240, 240); --darkreader-inline-bgcolor: initial; --darkreader-inline-color:#dfdcd7;&quot;&gt;=&amp;gt; All projects&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span data-darkreader-inline-color=&quot;&quot; data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: initial; color: rgb(240, 240, 240); --darkreader-inline-bgcolor: initial; --darkreader-inline-color:#dfdcd7;&quot;&gt;=&amp;gt; CurrentPage&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span data-darkreader-inline-color=&quot;&quot; data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;background-color: initial; color: rgb(240, 240, 240); --darkreader-inline-bgcolor: initial; --darkreader-inline-color:#dfdcd7;&quot;&gt;=&amp;gt; PageSize&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;() =&amp;gt; pageChange&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;= paginatedData =&amp;gt; paginate&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;lt;pagination /&amp;gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;map =&amp;gt; paginatedData&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="550" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-8" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="780" width="290" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-9" value="Pagination" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-10" value="&lt;div style=&quot;&quot;&gt;= pagesCount =&amp;gt; projects.length / pageSize&lt;/div&gt;&lt;div style=&quot;&quot;&gt;= pages =&amp;gt; range(1 , pagesCount + 1)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;map =&amp;gt; pages number { 1,2,3,4,...... }&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="790" width="275" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-11" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="270" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-12" value="paginate function" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-13" value="&lt;div style=&quot;&quot;&gt;= start =&amp;gt; currentPage -1 * pageSize&lt;/div&gt;&lt;div style=&quot;&quot;&gt;return _(allprojects).slice(start).take(pagesize).value()&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="290" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.008;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SubmTX_4PnBW8hBFExT1-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="630" as="sourcePoint" />
+            <mxPoint x="290" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-15" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.663;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="SubmTX_4PnBW8hBFExT1-7" target="SubmTX_4PnBW8hBFExT1-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="790" as="sourcePoint" />
+            <mxPoint x="410" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="530" y="650" />
+              <mxPoint x="440" y="650" />
+              <mxPoint x="440" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-16" value="allprojects length&lt;br&gt;pageSize&lt;br&gt;currentPage&lt;br&gt;() =&amp;gt; pageChange&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="720" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-17" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="SubmTX_4PnBW8hBFExT1-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="400" as="sourcePoint" />
+            <mxPoint x="470" y="350.00000000000045" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SubmTX_4PnBW8hBFExT1-18" value="allprojects&lt;br&gt;currentPage&lt;br&gt;pageSize" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="350" width="140" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
