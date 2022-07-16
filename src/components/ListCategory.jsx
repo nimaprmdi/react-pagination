@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 
 const ListCategory = ({ allGenres, selectedItem, onHandleGenreSelect }) => {
-    console.log("listCategory ", selectedItem);
     return (
         <ListGroup as="ul">
             {allGenres.map((genre) => {
