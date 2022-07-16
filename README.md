@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Simple React Pagination using Lodash
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First of all Install Lodash
 
-## Available Scripts
+`npm i lodash`
 
-In the project directory, you can run:
+Also Create This files
 
-### `npm start`
+```shell
+Table.jsx
+TablePagination.jsx
+paginate.js
+data.js
+Setup our Table.jsx
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In our Table.jsx we will render our data from data.js and display it to client
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```shell
+const [allProjects, setAllProjects] = useState(projects);// Projects is a array that includes all projects from data.js
+const [currentPage, setCurrentPage] = useState(1); // current page that we are viewing
+const [pageSize, setPageSize] = useState(3); // Items in our to render
+```
 
-### `npm test`
+And also include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+const handlePageChange = (page) => {
+    setCurrentPage(page); // Will set current viewing page based on pagination click
+};
+```
 
-### `npm run build`
+Ok here we render FILTERED Projects from paginate.js function (Don’t worry will explain it)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+const paginatedProjects = paginate(allProjects, currentPage, pageSize);
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Finally mapping our data
+Here you can map the filtered data in your table or any other situation that you want:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+{paginatedProjects.map((project, index) => {
+    return (
+        <tr key={index}>
+            <td>Projects Is {project.id}</td>
+            <td>{project.id}</td>
+            <td>{project.name}</td>
+            <td>{project.desc}</td>
+        </tr>
+    );
+})}
+```
 
-### `npm run eject`
+After your table please call TablePagination.jsx like:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+<TablePagination
+allProjects={allProjects}
+pageSize={pageSize}
+currentPage={currentPage}
+onPageChange={(e) => handlePageChange(e)}
+/>
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Setup our TablePagination.jsx
+Here we will render our page numbers and get passed props that we send via Table.jsx
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+const { allProjects, pageSize, currentPage, onPageChange } = props; // Get props from table.jsx
+const pagesCount = Math.ceil(allProjects.length / pageSize); // calculate pages count All Projects Length / pageSize
+const pages = _.range(1, pagesCount + 1); // create an array of numbers progressing from the given start value
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Also we will render our pagination items like:
 
-## Learn More
+```shell
+{pages.map((page, index) => {
+    return <li onClick={() => onPageChange(page)} key={index} active={page === currentPage}>{page}</li>
+)}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And we are done here! You can use this diagram to understand concept of the pagination and this GitHub repo to use it in your projects
