@@ -8,6 +8,7 @@ const TablePagination = (props) => {
     const pagesCount = Math.ceil(allProjects.length / pageSize);
 
     const pages = _.range(1, pagesCount + 1);
+    console.log(pages);
 
     return (
         <Pagination>

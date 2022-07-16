@@ -80,4 +80,4 @@ Also we will render our pagination items like:
 )}
 ```
 
-And we are done here! You can use this diagram to understand concept of the pagination and this GitHub repo to use it in your projects
+And we are done here!
