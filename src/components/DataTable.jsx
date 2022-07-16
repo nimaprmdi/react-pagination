@@ -27,17 +27,16 @@ const DataTable = () => {
             ? allProjects.filter((project) => project.genre.id === selectedItem.id)
             : allProjects;
 
-    const paginatedProjects = paginate(allProjects, currentPage, pageSize);
-    console.log(paginatedProjects);
+    const paginatedProjects = paginate(filtered, currentPage, pageSize);
 
     return (
         <div className="row mt-5">
             <div className="col-3">
-                {/* <ListCategory
+                <ListCategory
                     allGenres={allGenres}
                     selectedItem={selectedItem}
                     onHandleGenreSelect={(e) => handleGenreSelect(e)}
-                /> */}
+                />
             </div>
             <div className="col">
                 <Table className="table table-success" striped bordered hover>
@@ -66,7 +65,7 @@ const DataTable = () => {
                 </Table>
 
                 <TablePagination
-                    allProjects={paginatedProjects}
+                    allProjects={filtered}
                     pageSize={pageSize}
                     currentPage={currentPage}
                     onPageChange={(e) => handlePageChange(e)}
